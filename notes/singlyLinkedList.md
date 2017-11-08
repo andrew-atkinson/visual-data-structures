@@ -1,6 +1,6 @@
 #Singly Linked List
 
-1. Create a `Queue` with a `head`; a `Node(value)` with a `next` and `value`.
+1. Create a `List` with a `head`; a `Node(value)` with a `next` and `value`.
 2. Create a `push` method
 - assign a `new Node(value)`
 - if the `head` doesn't exist, 
@@ -56,7 +56,7 @@ SinglyLinkedList.prototype.insert = function (value, idx) {
     currentNodeIdx = 0,
     currentNode = this.head
   // walking to the insertion idx
-  while (idx != currentNodeIdx) {
+  while (idx < currentNodeIdx) {
     currentNode = currentNode.next
     currentNodeIdx++
   }
