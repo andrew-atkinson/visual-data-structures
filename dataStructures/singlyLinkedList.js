@@ -35,7 +35,7 @@ SinglyLinkedList.prototype.insert = function (value, idx) {
     this.head = newNode
   } else {
     newNode.next = currentNode.next
-    currentNode = newNode
+    currentNode.next = newNode
   }
 }
 
