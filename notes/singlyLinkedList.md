@@ -10,7 +10,7 @@
   - then point `currentNode.next` to `newNode`
 3. Create an `insert(value, idx)` method
   - assign a `new Node(value)`, `currentNodeIdx` to 0, `currentNode` to the `head`
-  - walk the list -> while the `idx` parameter isn't `currentNodeIdx`
+  - walk the list -> while the `idx` parameter is less than `currentNodeIdx`
     - point `currentNode` to `currentNode.next` -> moves the pointer
     - increment `currentNodeIdx`
   - insertion -> if `idx` is 0:
