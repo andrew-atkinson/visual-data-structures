@@ -8,12 +8,6 @@
 - an ADT can have more than one DS
     
     
-––––––––
-
-#Stacks
-    - Stacks are LIFO (last in first out)
-    - have `push` and `pop` methods
-
 
 #Linked Lists
 
