@@ -25,7 +25,7 @@ SinglyLinkedList.prototype.insert = function (value, idx) {
     currentNodeIdx = 0,
     currentNode = this.head
   // walking to the insertion idx
-  while (idx != currentNodeIdx) {
+  while (idx < currentNodeIdx) {
     currentNode = currentNode.next
     currentNodeIdx++
   }
@@ -35,7 +35,7 @@ SinglyLinkedList.prototype.insert = function (value, idx) {
     this.head = newNode
   } else {
     newNode.next = currentNode.next
-    currentNode.next = newNode
+    currentNode = newNode
   }
 }
 
