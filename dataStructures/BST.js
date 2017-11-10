@@ -1,9 +1,8 @@
-class Node {
+module.exports = class Node {
   constructor(value) {
     this.value = value
     this.left = null
     this.right = null
-    this.parent = null
   }
 
   insert(value) {
@@ -25,6 +24,8 @@ class Node {
     }
   }
 }
+
+
 
 /* ---------- */
 
